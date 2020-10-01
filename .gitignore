@@ -1,3 +1,4 @@
 /.vscode
 Gemfile.lock
 *.gem
+/test.rb
