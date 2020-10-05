@@ -22,15 +22,12 @@ module Microc
 
           # bind entries to real payload
           self.default = method(:nop)
-          self[:LEA] = method(:lea)
         end
 
         # do nothing
         def nop; end
 
-        def lea
-          puts 'LEA'
-        end
+        # TODO: design IR here
       end
     end
   end

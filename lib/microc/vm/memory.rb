@@ -14,6 +14,15 @@ module Microc
       end
 
       class Mem
+        attr_accessor :stack, # Runtime stack
+                      :text,  # Code
+                      :data   # Global and static variables
+
+        def initialize
+          @stack = []
+          @text = []
+          @data = []
+        end
       end
     end
   end

@@ -14,6 +14,17 @@ module Microc
       end
 
       class Reg
+        attr_accessor :pc, # Program counter
+                      :sp, # Stack pointer
+                      :bp, # Base pointer
+                      :ax # Accumulator
+
+        def initialize
+          @pc = nil
+          @sp = nil
+          @bp = nil
+          @ax = nil
+        end
       end
     end
   end
